@@ -11,7 +11,7 @@ Even though the Teensy is operating on 3.3V, use of 5V transceivers may be an op
 
 Note that CAN will normally require termination resistors.  These are located at the two ends of a CAN bus to prevent reflections.  Do not add more terminators when connecting devices to an existing properly terminated CAN bus.
 
-Supported baud rates are 50000, 100000, 125000, 250000, 500000, and 1000000 bits per second.  If the baud rate is not specified it will default to 125000.
+Supported baud rates are 33333, 50000, 100000, 125000, 250000, 500000 and 1000000 bits per second.  If the baud rate is not specified it will default to 125000.
 
 ###CAN Transceiver Options
 Please add parts you are using successfully with Teensy 3.1 to this list.
@@ -20,6 +20,7 @@ Please add parts you are using successfully with Teensy 3.1 to this list.
 - NXP TJA1050T/VM,118 on the same 5V supply as the Teensy. (1MBPS)
 - Microchip MCP2551 on 5V (reported at 500KBPS)
 - Linear LT1796 on 5V (not speedtested)
+- Freescale MC33897CTEF/R2 33.33 kbs single wire CAN compliant to GMW3089v2.4
 
 ###Driver API
 **begin()**
